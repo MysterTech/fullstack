@@ -1,9 +1,6 @@
-let uniStudent = student => {
-    let {name, university} = student
-    console.log(`${name} from ${university}`)
-}
-
-uniStudent({
-    name: 'Sanjay Krishna',
-    university: 'IIN'
-})
+/* let [firstMountain] = ['Everest', 'K2', 'kilimanjaro']
+console.log(firstMountain) */
+/* let [,firstMountain] = ['Everest', 'K2', 'kilimanjaro']
+console.log(firstMountain) */
+let [,,firstMountain] = ['Everest', 'K2', 'kilimanjaro']
+console.log(firstMountain)
