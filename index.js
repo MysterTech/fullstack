@@ -1,7 +1,7 @@
-let fname = "Sanjay";
-let lname = "Krishna";
-let age = prompt("Guess Sanjay's age...");
+function greeting(message){
+    return alert(`${message} everyone`);
+}
 
-let result = `${fname} ${lname} is ${age} years old`;
+let greeting = message => alert(`${message} everyone`);
 
-alert(result);
+greeting("Good morning")
