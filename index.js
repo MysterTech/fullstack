@@ -1,12 +1,10 @@
-let createBlog = (title, body) => {
-    if(!title){
-        throw new Error("Title is required.")
+let india = {
+    //properties
+    mountains: ['Kailash', 'Mansarovar', 'K2'],
+    //methods
+    printWithDash: function() {
+        setTimeout(() => console.log(this.mountains.join(' - ')), 3000)
     }
-    if(!body){
-        throw new Error("Post doesnt have a body.")
-    }
+};
 
-    return alert(`${title} - ${body}`);
-}
-
-createBlog('Blog Title', 'Blog Body');
+india.printWithDash()
