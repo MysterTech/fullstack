@@ -1,10 +1,9 @@
-let india = {
-    //properties
-    mountains: ['Kailash', 'Mansarovar', 'K2'],
-    //methods
-    printWithDash: function() {
-        setTimeout(() => console.log(this.mountains.join(' - ')), 3000)
-    }
-};
+let uniStudent = student => {
+    let {name, university} = student
+    console.log(`${name} from ${university}`)
+}
 
-india.printWithDash()
+uniStudent({
+    name: 'Sanjay Krishna',
+    university: 'IIN'
+})
