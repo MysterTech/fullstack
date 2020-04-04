@@ -1,11 +1,5 @@
-function Holiday(destination, days) {
-    this.destination = destination;
-    this.days = days;
-}
+var mountains = ["Everest", "Kilimanjaro", "K2"]
+var [first, ...rest] = mountains
 
-Holiday.prototype.info = function () {
-    console.log(`${this.destination} | ${this.days} days`)
-}
-
-var india = new Holiday("India",30)
-console.log(india.info())
+console.log(first)
+console.log (rest)
