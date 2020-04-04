@@ -16,12 +16,12 @@ class Expiditions extends Holiday {
     }
 
     info() {
-        return super.info() + `with ${this.gear}`
+        return super.info() + `with ${this.gear.join(' and ')}`
     }
 }
 
 const trip = new Holiday("Bangalore, India",15)
-const tripWithGear = new Expiditions("Bangalore,India", 15, "shoes, shorts")
+const tripWithGear = new Expiditions("Bangalore,India", 15, ["shoes", "shorts"])
 
 console.log(trip.info())
 console.log(tripWithGear.info())
