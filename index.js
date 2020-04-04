@@ -1,9 +1,11 @@
-var name = "Everest"
-var height = "8848"
-var output = function() {
-    console.log(`Mt. ${name} is ${height}m tall.`)
+function Holiday(destination, days) {
+    this.destination = destination;
+    this.days = days;
 }
 
-var adventureClimbing = {name, height, output}
+Holiday.prototype.info = function () {
+    console.log(`${this.destination} | ${this.days} days`)
+}
 
-adventureClimbing.output()
+var india = new Holiday("India",30)
+console.log(india.info())
