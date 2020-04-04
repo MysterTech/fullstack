@@ -9,7 +9,7 @@ class Holiday {
     }
 }
 
-class Expiditions extends Holiday {
+class Expeditions extends Holiday {
     constructor (destination, days, gear) {
         super(destination, days)
         this.gear = gear
@@ -21,7 +21,7 @@ class Expiditions extends Holiday {
 }
 
 const trip = new Holiday("Bangalore, India",15)
-const tripWithGear = new Expiditions("Bangalore,India", 15, ["shoes", "shorts"])
+const tripWithGear = new Expeditions("Bangalore,India", 15, ["shoes", "shorts", "camera"])
 
 console.log(trip.info())
 console.log(tripWithGear.info())
